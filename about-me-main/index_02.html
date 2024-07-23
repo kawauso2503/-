@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Family</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(ellipse at top, #f0b2cd, transparent),
+                        radial-gradient(ellipse at bottom, #9c71e1, transparent),
+                        radial-gradient(ellipse at right, #7182e0, transparent),
+                        radial-gradient(ellipse at left, #cc6576, transparent);
+        }
+    
+        .swiper {
+            width: 528px;
+            height: 640px;
+        }
+    
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 18px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #fff;
+        }
+    
+        .swiper-slide:nth-child(1n) {
+            background-color: rgb(244, 184, 140);
+        }
+    
+        .swiper-slide:nth-child(2n) {
+            background-color: rgb(164, 239, 137);
+        }
+    
+        .swiper-slide:nth-child(3n) {
+            background-color: rgb(242, 132, 193);
+        }
+    
+        .swiper-slide:nth-child(4n) {
+            background-color: rgb(250, 102, 122);
+        }
+    
+        footer {
+            position: fixed;
+            bottom: 100px;
+            right: 100px;
+            padding: flex;
+            background-color: #ccc;
+        }
+    
+        footer a {
+            text-decoration: none;
+            align-items: center;
+            padding: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <ul>
+                    <h1>MY Bio</h1>
+                    <li>Date of birth : 16 May 2000</li>
+                    <li>Education history : start education since 4</li>
+                    <li>Graduated high school : at 16</li>
+                    <li>University : West Yangon University [English specialization]</li>
+                    <li>Favourite things : Eating, Sleeping, Spacing out, Gaming, Dancing, Psychology, Thinking, Commanding</li> 
+                </ul>    
+            </div>
+            <div class="swiper-slide">
+                <ul>
+                    <h2>Sports</h2>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            effect: 'cards',
+            grabCursor: true,
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <p>  <a href="index.html"> Back to Home Page</a></p>
+    </footer>
+</body>
+</html>
